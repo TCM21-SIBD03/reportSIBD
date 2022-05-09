@@ -4,7 +4,7 @@ Repository to host the project developed for 'some class', a fisrt year subject 
 
 ## Short theme description
 
-An example report using markdown on Github. This documentation is writen using [Markdown](https://www.markdownguide.org/). Here is a [link to the basic syntax](https://www.markdownguide.org/basic-syntax), but an [extended syntax](https://www.markdownguide.org/extended-syntax/) is also available. If you're starting with Markdown, you may want to try a [Markdown Tutorial](https://www.markdowntutorial.com/) and read the [getting started](https://www.markdownguide.org/getting-started/) section.
+Nosso trabalho pretende ajudar uma empresa a criar um sistema para facilitar as saidas e entradas de stock. 
 
 ## Repository organization
 
