@@ -37,5 +37,6 @@ _Please add a hyperlink per Report.
 :[REBD](doc/rebd/rebd00.md)
 
 ## Team
-* Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
-* Other team members
+* João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
+* Daniel Gomes [@DanielGomes](https://github.com/EternaL1001)
+* Rafael Maia  [@RafaelMaia](https://github.com/RafaelMaiaa)
