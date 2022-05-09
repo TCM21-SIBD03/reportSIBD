@@ -1,7 +1,9 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-Entidades: 
+
+
+### Entidades: 
 
 
 PRODUTO (nome, código, validade, fornecedor) 
@@ -17,7 +19,7 @@ STOCK (numeroMinimo, numeroMaximo)
 FORNECEDOR (nome, NIF, email, morada, contato)
 
 
-Associações:
+### Associações:
 
 
 gruposDe (PRODUTO, TIPODEPRODUTO)				       N:1 T/P
@@ -28,10 +30,10 @@ forneceProduto(FORNECEDOR, MERCADO, PRODUTO)		        1:N T/T
 
 
 
-Exemplo de inserção de uma imagem:   
+### Diagrama: 
 ![An alternative description](image/image.jpeg)   
 
-Always add a description to help the user understand the figure 
+Diagrama do modelo Entidade-Associações  
 
 NOTA: Cada entidade-tipo e cada associação devem ter um pequeno texto – um ou dois parágrafos – para descrever esse elemento do modelo e os seus atributos)
 
