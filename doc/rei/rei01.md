@@ -9,6 +9,7 @@ Sabendo que o stock mínimo é de três produtos de cada tipo é necessário ter
 ## Modelação do problema
 
 _Com o sistema que criamos pretendemos solucionar o problema da quantidade existente de stock no supermercado, sendo que apenas o gerente e o dono do mesmo podem aceder ao sistema._
+
 _(Apresentar os pressupostos utilizados na modelação do problema, estes pressupostos poderão não estar na descrição do trabalho)_
 
 
