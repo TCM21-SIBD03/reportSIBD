@@ -8,7 +8,6 @@ Nosso trabalho pretende ajudar uma empresa a criar um sistema para facilitar as 
 
 
 ## Reports
-_Please add a hyperlink per Report.
 
 :[REI](doc/rei/rei00.md)
 
