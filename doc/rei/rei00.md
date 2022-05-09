@@ -10,8 +10,8 @@
 
 _Don't forget to add the group elements_
 
-* João Matheus Rodaczynski Horvath (https://github.com/joaohorvath)
-* Daniel Gomes (https://github.com/EternaL1001)
+* João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
+* Daniel Gomes [@DanielGomes](https://github.com/EternaL1001)
 
 ---
 _You can add a footer menu for navigation_ 
