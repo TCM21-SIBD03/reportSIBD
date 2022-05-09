@@ -13,6 +13,7 @@ _Don't forget to add the group elements_
 * João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
 * Daniel Gomes [@DanielGomes](https://github.com/EternaL1001)
 * Rafael Maia  [@RafaelMaia](https://github.com/RafaelMaiaa)
+* Joris Kibildis [@JorisKibildis](https://github.com/JustJoris)
 
 ---
 _You can add a footer menu for navigation_ 
