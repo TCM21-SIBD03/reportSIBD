@@ -16,6 +16,5 @@ _Don't forget to add the group elements_
 * Joris Kibildis [@JorisKibildis](https://github.com/JustJoris)
 
 ---
-
 < Previous | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rei01.md)
 :--- | :---: | ---: 
