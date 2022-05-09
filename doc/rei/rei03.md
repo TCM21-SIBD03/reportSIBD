@@ -1,7 +1,32 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-_(Introduzir as entidade-tipo e associações do sistema, adicionalmente apresentar o diagrama do modelo Entidade-Associação.)_
+Entidades: 
+
+
+PRODUTO (nome, código, validade, fornecedor) 
+
+TIPODEPRODUTO( gruposAlimentares, código)
+
+MERCADO (nome, contato, morada, email,NIF)
+
+GERENCIA (gerente, dono)
+
+STOCK (numeroMinimo, numeroMaximo)
+
+FORNECEDOR (nome, NIF, email, morada, contato)
+
+
+Associações:
+
+
+gruposDe (PRODUTO, TIPODEPRODUTO)				       N:1 T/P
+
+gerenciaStock(GERENCIA, STOCK, PRODUTO, TIPODEPRODUTO)     1:N T/T
+
+forneceProduto(FORNECEDOR, MERCADO, PRODUTO)		        1:N T/T
+
+
 
 Exemplo de inserção de uma imagem:   
 ![An alternative description](image/image.jpeg)   
