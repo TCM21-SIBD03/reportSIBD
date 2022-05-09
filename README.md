@@ -15,3 +15,4 @@ Nosso trabalho pretende ajudar uma empresa a criar um sistema para facilitar as 
 * João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
 * Daniel Gomes [@DanielGomes](https://github.com/EternaL1001)
 * Rafael Maia  [@RafaelMaia](https://github.com/RafaelMaiaa)
+* Joris Kibildis [@JorisKibildis](https://github.com/JustJoris)
