@@ -6,7 +6,7 @@
 :[Especificação de Requisitos](rei02.md)  
 :[Esquema Conceptual](rei03.md)  
 
-## Group _xx_
+## Group _03_
 
 _Don't forget to add the group elements_
 
