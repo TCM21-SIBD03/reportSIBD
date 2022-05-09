@@ -8,7 +8,6 @@
 
 ## Group _03_
 
-_Don't forget to add the group elements_
 
 * João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
 * Daniel Gomes [@DanielGomes](https://github.com/EternaL1001)
