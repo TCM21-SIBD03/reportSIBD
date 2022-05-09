@@ -1,4 +1,4 @@
-# MODERNIZAÇÃO DO SUPERMERCADO LOCAL
+# Modernização do Supermercado Local
 
 Projeto desenvolvido pelos alunos de numero A038303, A038293, A041951, A035207 da equipa SIBD03.
 
