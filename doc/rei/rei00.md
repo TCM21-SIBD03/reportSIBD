@@ -6,7 +6,7 @@
 :[Especificação de Requisitos](rei02.md)  
 :[Esquema Conceptual](rei03.md)  
 
-## Group _03_
+## Grupo _03_
 
 
 * João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
