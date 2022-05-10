@@ -37,7 +37,7 @@ Diagrama do modelo Entidade-Associações
 
 
 ## Regras de negócio adicionais (Restrições)
-_(Apresentar uma lista detalhada das regras e restrições não possíveis de representar no modelo E/A, que visam a manutenção da consistência e integridade da modelação do problema)_
+_O dono apenas terá acesso à gerencia no caso do gerente não estar presente_
 
 ---
 [< Previous](rei02.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | Next >
