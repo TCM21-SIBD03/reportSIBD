@@ -15,5 +15,5 @@
 * Joris Kibildis [@JorisKibildis](https://github.com/JustJoris)
 
 ---
-< Previous | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rei01.md)
+< Previous | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rebd01.md)
 :--- | :---: | ---: 
