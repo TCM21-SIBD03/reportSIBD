@@ -1,4 +1,4 @@
-# C3 : Esquema conceptual
+# C2 : Esquema conceptual
 
 ## Modelo E/A
 
