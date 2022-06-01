@@ -10,6 +10,7 @@ Nosso trabalho pretende ajudar uma empresa a criar um sistema para facilitar as 
 ## Reports
 
 :[REI](doc/rei/rei00.md)
+:[REBD](doc/rebd/rebd00.md)
 
 ## Team
 * João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
