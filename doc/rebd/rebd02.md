@@ -31,7 +31,7 @@ forneceProduto(FORNECEDOR, MERCADO, PRODUTO)		        1:N T/T
 
 
 ### Diagrama: 
-![An alternative description](images/image.png)   
+![An alternative description](images/diagrama.png)   
 
 Diagrama do modelo Entidade-Associações  
 
