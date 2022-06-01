@@ -40,5 +40,5 @@ Diagrama do modelo Entidade-Associações
 _O dono apenas terá acesso à gerencia no caso do gerente não estar presente_
 
 ---
-[< Previous](rei02.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | Next >
+[< Previous](rebd.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rebd04.md)
 :--- | :---: | ---: 
