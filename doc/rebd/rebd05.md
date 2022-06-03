@@ -141,6 +141,31 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 ![An alternative description](imagens/tabela1.png)
 ![An alternative description](imagens/tabela2.png)
 ![An alternative description](imagens/tabela3.png)
+
+
+#### Seleciona os azeites de Oliva existente no supermercado.
+
+Select    Azeite de Oliva
+
+From    Gorduras e óleos
+
+
+#### Seleciona as frutas e vegetais que tenham quantidade inferior a 4.
+
+Select    Maça, Banana, Uva, Morango
+
+From   Frutas e vegetais
+
+Where   quantidade < 4
+
+
+
+#### Seleciona as carnes e feijões que tenham validade superior a 30 dias.
+
+Select    Carne de vaca, Carne de porco, Feijão verde, feijão vermelho
+From    carnes e feijões
+Where   validade > 30
+
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | Next >
 :--- | :---: | ---: 
