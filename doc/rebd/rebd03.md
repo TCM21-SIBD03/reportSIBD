@@ -64,6 +64,7 @@ ForneceProduto (_NIF -> Fornecedor, _NIF-> Mercado, _codigo -> Produto)
 
 ### Passo 7: Entidades Fracas
 
+Não existem entidades fracas
 
 ## Relações
 
