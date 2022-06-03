@@ -67,7 +67,7 @@ ForneceProduto (_NIF -> Fornecedor, _NIF-> Mercado, _codigo -> Produto)
 
 ## Relações
 
-|Produto                                                                                  |
+|Produto    |       |        |              |                         |
 |-----------|------ |--------|--------------|-------------------------|
 |nome       |_código|validade|cod_fornecedor|#_codigo -> Tipodeproduto|
 
