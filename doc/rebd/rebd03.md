@@ -4,7 +4,7 @@
 
 ### Passo 1: Entidade e Atributos 
 
-Produto (nome, _código, validade, cod_fornecedor)
+Produto (nome, _código, validade, codFornecedor)
 
 Tipodeproduto (gruposAlimentares, _código)
 
@@ -22,7 +22,7 @@ Não existem associações com cardinalidade 1:1
 
 ### Passo 3: Associações 1:N
 
-Produto (nome, _código, validade, cod_fornecedor
+Produto (nome, _código, validade, codFornecedor
 #_codigo -> Tipodeproduto
 
 Tipodeproduto (gruposAlimentares, _código)
@@ -45,7 +45,7 @@ Não existem atributos multivalor
 
 ### Passo 6: Associação ternária
 
-Produto (nome, _código, validade, cod_fornecedor
+Produto (nome, _código, validade, codFornecedor
 #_codigo -> Tipodeproduto
 
 Tipodeproduto (gruposAlimentares, _código)
@@ -70,7 +70,7 @@ Não existem entidades fracas
 
 |Produto    |       |        |              |                         |
 |-----------|------ |--------|--------------|-------------------------|
-|nome       |_código|validade|cod_fornecedor|#_codigo -> Tipodeproduto|
+|nome       |_código|validade|codFornecedor|#_codigo -> Tipodeproduto|
 
 |Tipodeproduto    |       |
 |-----------------|-------|
@@ -101,7 +101,50 @@ Não existem entidades fracas
 |_NIF -> Fornecedor|_NIF-> Mercado|_codigo -> Produto|
 
 ## Normalização do Esquema Relacional
-_(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
+
+# 1ª Forma Normal (1NF)
+
+Produto (nome, _código, validade, codFornecedor, quantidade)
+
+Tipodeproduto (gruposAlimentares, _código)
+
+Mercado (nome, contacto, morada, email, _NIF)
+
+Encomenda (codFornecedor, quantidade, _codProduto)
+
+Fornecedor (nome, _NIF, email, morada, contacto)
+
+Alerta (_nome, antecedência)
+
+# 2ª Forma Normal (2NF)
+
+Produto (nome, _código, validade, codFornecedor, quantidade)
+
+Tipodeproduto (gruposAlimentares, _código)
+
+Mercado (nome, contacto, morada, email, _NIF)
+
+Encomenda (codFornecedor, quantidade, _codProduto)
+
+Fornecedor (nome, _NIF, email, morada, contacto)
+
+Alerta (_nome, antecedência)
+
+# 3ª Forma Normal (3NF)
+
+Produto (nome, _código, validade, codFornecedor, quantidade)
+
+Tipodeproduto (gruposAlimentares, _código)
+
+Mercado (#nome, _NIF) 
+MercadoNome(nome, contacto, morada, email)
+
+Encomenda (codFornecedor, quantidade, _codProduto)
+
+Fornecedor (#nome, _NIF)
+FornecedorNome (nome, email, morada, contacto)
+
+Alerta (_nome, antecedência)
 
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rebd04.md)
