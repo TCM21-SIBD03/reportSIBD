@@ -106,18 +106,13 @@ Não existem entidades fracas
 
 Produto (nome, _código, validade, codFornecedor, quantidade)
 
-
 Tipodeproduto (gruposAlimentares, _código)
-
 
 Mercado (nome, contacto, morada, email, _NIF)
 
-
 Encomenda (codFornecedor, quantidade, _codProduto)
 
-
 Fornecedor (nome, _NIF, email, morada, contacto)
-
 
 Alerta (_nome, antecedência)
 
@@ -125,18 +120,13 @@ Alerta (_nome, antecedência)
 
 Produto (nome, _código, validade, codFornecedor, quantidade)
 
-
 Tipodeproduto (gruposAlimentares, _código)
-
 
 Mercado (nome, contacto, morada, email, _NIF)
 
-
 Encomenda (codFornecedor, quantidade, _codProduto)
 
-
 Fornecedor (nome, _NIF, email, morada, contacto)
-
 
 Alerta (_nome, antecedência)
 
@@ -144,20 +134,17 @@ Alerta (_nome, antecedência)
 
 Produto (nome, _código, validade, codFornecedor, quantidade)
 
-
 Tipodeproduto (gruposAlimentares, _código)
 
-
 Mercado (#nome, _NIF) 
-MercadoNome(nome, contacto, morada, email)
 
+MercadoNome(nome, contacto, morada, email)
 
 Encomenda (codFornecedor, quantidade, _codProduto)
 
-
 Fornecedor (#nome, _NIF)
-FornecedorNome (nome, email, morada, contacto)
 
+FornecedorNome (nome, email, morada, contacto)
 
 Alerta (_nome, antecedência)
 
