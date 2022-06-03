@@ -8,9 +8,8 @@
 CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
 USE `mydb` ;
 
--- -----------------------------------------------------
--- Table `mydb`.`produto`
--- -----------------------------------------------------
+ Table `mydb`.`produto`
+ 
 CREATE TABLE IF NOT EXISTS `mydb`.`produto` (
   `codigo` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
@@ -21,9 +20,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`produto` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`Alerta`
--- -----------------------------------------------------
+ Table `mydb`.`Alerta`
+ 
 CREATE TABLE IF NOT EXISTS `mydb`.`Alerta` (
   `nome` INT NOT NULL AUTO_INCREMENT,
   `antecedência` VARCHAR(45) NOT NULL,
