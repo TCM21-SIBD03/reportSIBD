@@ -23,36 +23,36 @@ Não há associações com cardinalidade 1:1
 ### Passo 3: Associações 1:N
 
 Produto (nome, _codigo, validade, codFornecedor, quantidade
-#_codigo->Tipodeproduto, #_NIF->Fornecedor)
+  #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
 Tipodeproduto (gruposAlimentares,_codigo)
 
 Mercado (nome, contacto, morada, email,_NIF)
 
 Encomenda (codFonrecedor, quantidade, _codProduto
-#_NIF->Mercado,#_NIF->Fornecedor)
+  #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
 
 Alerta (_nome, antecedência
-# _NIF->Fornecedor)
+  #_NIF->Fornecedor)
 
 Passo 4: Associações N:M
 
 Produto (nome, _codigo, validade, codFornecedor, quantidade
-#_codigo->Tipodeproduto, #_NIF->Fornecedor)
+  #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
 Tipodeproduto (gruposAlimentares,_codigo)
 
 Mercado (nome, contacto, morada, email,_NIF)
 
 Encomenda (codFonrecedor, quantidade, _codProduto
-#_NIF->Mercado,#_NIF->Fornecedor)
+  #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
 
 Alerta (_nome, antecedência
-# _NIF->Fornecedor)
+ #_NIF->Fornecedor)
 
 Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
 
