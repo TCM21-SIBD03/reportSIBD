@@ -107,85 +107,95 @@ Não existem Entidades Fracas
 
 # 1ª Forma Normal (1NF)
 
-Produto (nome, _código, validade, codFornecedor, quantidade)
+Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
-Tipodeproduto (gruposAlimentares, _código)
+Tipodeproduto (gruposAlimentares,_codigo)
 
-Mercado (nome, contacto, morada, email, _NIF)
+Mercado (nome, contacto, morada, email,_NIF)
 
-Encomenda (codFornecedor, quantidade, _codProduto)
+Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
 
-Alerta (_nome, antecedência)
+Alerta (_nome, antecedência, #_NIF->Fornecedor)
+
+Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
 
 # 2ª Forma Normal (2NF)
 
-Produto (nome, _código, validade, codFornecedor, quantidade)
+Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
-Tipodeproduto (gruposAlimentares, _código)
+Tipodeproduto (gruposAlimentares,_codigo)
 
-Mercado (nome, contacto, morada, email, _NIF)
+Mercado (nome, contacto, morada, email,_NIF)
 
-Encomenda (codFornecedor, quantidade, _codProduto)
+Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
 
-Alerta (_nome, antecedência)
+Alerta (_nome, antecedência, #_NIF->Fornecedor)
+
+Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
 
 # 3ª Forma Normal (3NF)
 
-Produto (nome, _código, validade, codFornecedor, quantidade)
+Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
-Tipodeproduto (gruposAlimentares, _código)
+Tipodeproduto (gruposAlimentares,_codigo)
 
-Mercado (#nome, _NIF) 
+Mercado (#nome,_NIF)
 
-MercadoNome(nome, contacto, morada, email)
+  Identificacaomercado (_nome, contacto, morada, email)
 
-Encomenda (codFornecedor, quantidade, _codProduto)
+Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (#nome, _NIF)
 
-FornecedorNome (nome, email, morada, contacto)
+  Identificacaofornecedor (_nome, email, morada, contacto)
 
-Alerta (_nome, antecedência)
+Alerta (_nome, antecedência, #_NIF->Fornecedor)
+
+Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
 
 # Forma Normal de Boyce-Codd (BCNF)
 
-Produto (nome, _código, validade, codFornecedor, quantidade)
+Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
-Tipodeproduto (gruposAlimentares, _código)
+Tipodeproduto (gruposAlimentares,_codigo)
 
-Mercado (#nome, _NIF) 
+Mercado (#nome,_NIF)
 
-MercadoNome(nome, contacto, morada, email)
+  Identificacaomercado (_nome, contacto, morada, email)
 
-Encomenda (codFornecedor, quantidade, _codProduto)
+Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (#nome, _NIF)
 
-FornecedorNome (nome, email, morada, contacto)
+  Identificacaofornecedor (_nome, email, morada, contacto)
 
-Alerta (_nome, antecedência)
+Alerta (_nome, antecedência, #_NIF->Fornecedor)
+
+Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
 
 # 4ª Forma Normal (4NF)
 
-Produto (nome, _código, validade, codFornecedor, quantidade)
+Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
-Tipodeproduto (gruposAlimentares, _código)
+Tipodeproduto (gruposAlimentares,_codigo)
 
-Mercado (#nome, _NIF) 
+Mercado (#nome,_NIF)
 
-MercadoNome(nome, contacto, morada, email)
+  Identificacaomercado (_nome, contacto, morada, email)
 
-Encomenda (codFornecedor, quantidade, _codProduto)
+Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (#nome, _NIF)
 
-FornecedorNome (nome, email, morada, contacto)
+  Identificacaofornecedor (_nome, email, morada, contacto)
 
-Alerta (_nome, antecedência)
+Alerta (_nome, antecedência, #_NIF->Fornecedor)
+
+Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
 
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rebd04.md)
