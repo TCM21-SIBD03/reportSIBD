@@ -21,12 +21,17 @@ Alerta (_nome, antecedência)
 ### Associações:
 
 
-gruposDe (PRODUTO, TIPODEPRODUTO)				       N:1 T/P
+Recebe (ALERTA, FORNECEDOR)			       N:1 P/P
 
-gerenciaStock(GERENCIA, STOCK, PRODUTO, TIPODEPRODUTO)     1:N T/T
+Categoria (TIPODEPRODUTO, PRODUTO)     1:N P/T
 
-forneceProduto(FORNECEDOR, MERCADO, PRODUTO)		        1:N T/T
+fornece (FORNECEDOR, PRODUTO)		       1:N P/T
 
+compõe (PRODUTO, ENCOMENDA)            N:M P/P
+
+fazA (MERCADO, ENCOMENDA)              1:N P/P
+
+envia (FORNECEDOR, ENCOMENDA)          1:N P/T
 
 
 ### Diagrama: 
