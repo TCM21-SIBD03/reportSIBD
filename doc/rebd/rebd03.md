@@ -148,6 +148,42 @@ FornecedorNome (nome, email, morada, contacto)
 
 Alerta (_nome, antecedência)
 
+# Forma Normal de Boyce-Codd (BCNF)
+
+Produto (nome, _código, validade, codFornecedor, quantidade)
+
+Tipodeproduto (gruposAlimentares, _código)
+
+Mercado (#nome, _NIF) 
+
+MercadoNome(nome, contacto, morada, email)
+
+Encomenda (codFornecedor, quantidade, _codProduto)
+
+Fornecedor (#nome, _NIF)
+
+FornecedorNome (nome, email, morada, contacto)
+
+Alerta (_nome, antecedência)
+
+# 4ª Forma Normal (4NF)
+
+Produto (nome, _código, validade, codFornecedor, quantidade)
+
+Tipodeproduto (gruposAlimentares, _código)
+
+Mercado (#nome, _NIF) 
+
+MercadoNome(nome, contacto, morada, email)
+
+Encomenda (codFornecedor, quantidade, _codProduto)
+
+Fornecedor (#nome, _NIF)
+
+FornecedorNome (nome, email, morada, contacto)
+
+Alerta (_nome, antecedência)
+
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rebd04.md)
 :--- | :---: | ---: 
