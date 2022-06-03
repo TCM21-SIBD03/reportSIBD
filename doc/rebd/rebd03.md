@@ -66,7 +66,10 @@ ForneceProduto (_NIF -> Fornecedor, _NIF-> Mercado, _codigo -> Produto)
 
 
 ## Relações
-_(Apresentar as relações obtidas da transformação direta a partir do modelo EA)_
+
+|Produto                                                                                  |
+|-----------|------ |--------|--------------|-------------------------|
+|nome       |_código|validade|cod_fornecedor|#_codigo -> Tipodeproduto|
 
 ## Normalização do Esquema Relacional
 _(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
