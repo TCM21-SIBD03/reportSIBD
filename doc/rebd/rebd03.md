@@ -4,67 +4,70 @@
 
 ### Passo 1: Entidade e Atributos 
 
-Produto (nome, _código, validade, codFornecedor)
+Produto (nome, _codigo, validade, codFornecedor, quantidade)
 
-Tipodeproduto (gruposAlimentares, _código)
+Tipodeproduto (gruposAlimentares,_codigo)
 
-Mercado (nome, contacto, morada, email, _NIF)
+Mercado (nome, contacto, morada, email,_NIF)
 
-Gerencia (gerente, _dono)
-
-Stock (numeroMinimo, numeroMaximo)
+Encomenda (codFonrecedor, quantidade, _codProduto)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
+
+Alerta (_nome, antecedência)
 
 ### Passo 2: Associações 1:1
 
-Não existem associações com cardinalidade 1:1
+Não há associações com cardinalidade 1:1
 
 ### Passo 3: Associações 1:N
 
-Produto (nome, _código, validade, codFornecedor
-#_codigo -> Tipodeproduto
+Produto (nome, _codigo, validade, codFornecedor, quantidade
+#_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
-Tipodeproduto (gruposAlimentares, _código)
+Tipodeproduto (gruposAlimentares,_codigo)
 
-Mercado (nome, contacto, morada, email, _NIF)
+Mercado (nome, contacto, morada, email,_NIF)
 
-Gerencia (gerente, _dono)
-
-Stock (numeroMinimo, numeroMaximo)
+Encomenda (codFonrecedor, quantidade, _codProduto
+#_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
 
-### Passo 4: Associações N:M
+Alerta (_nome, antecedência
+# _NIF->Fornecedor)
 
-Não existem associações com cardinalidade N:M
+Passo 4: Associações N:M
+
+Produto (nome, _codigo, validade, codFornecedor, quantidade
+#_codigo->Tipodeproduto, #_NIF->Fornecedor)
+
+Tipodeproduto (gruposAlimentares,_codigo)
+
+Mercado (nome, contacto, morada, email,_NIF)
+
+Encomenda (codFonrecedor, quantidade, _codProduto
+#_NIF->Mercado,#_NIF->Fornecedor)
+
+Fornecedor (nome, _NIF, email, morada, contacto)
+
+Alerta (_nome, antecedência
+# _NIF->Fornecedor)
+
+Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
 
 ### Passo 5: Atributo multivalor
 
-Não existem atributos multivalor
+Não existe Atributos Multivalor
 
 ### Passo 6: Associação ternária
 
-Produto (nome, _código, validade, codFornecedor
-#_codigo -> Tipodeproduto
+Não existem Associações Ternárias
 
-Tipodeproduto (gruposAlimentares, _código)
+### Passo 7: Entidade fraca
 
-Mercado (nome, contacto, morada, email, _NIF)
+Não existem Entidades Fracas
 
-Gerencia (gerente, _dono)
-
-Stock (numeroMinimo, numeroMaximo)
-
-Fornecedor (nome, _NIF, email, morada, contacto)
-
-GerenciaStock (_dono->Gerencia, #numeroMinimo -> Stock, #numeroMaximo->Stock, _codigo ->Produto, _codigo ->Tipodeproduto)
-
-ForneceProduto (_NIF -> Fornecedor, _NIF-> Mercado, _codigo -> Produto)
-
-### Passo 7: Entidades Fracas
-
-Não existem entidades fracas
 
 ## Relações
 
