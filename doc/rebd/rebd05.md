@@ -29,9 +29,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Alerta` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`Encomenda`
--- -----------------------------------------------------
+ Table `mydb`.`Encomenda`
+
 CREATE TABLE IF NOT EXISTS `mydb`.`Encomenda` (
   `codProduto` INT NOT NULL AUTO_INCREMENT,
   `quantidade` INT NOT NULL,
@@ -40,9 +39,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Encomenda` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`fornecedor`
--- -----------------------------------------------------
+ Table `mydb`.`fornecedor`
+
 CREATE TABLE IF NOT EXISTS `mydb`.`fornecedor` (
   `NIF` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
@@ -74,9 +72,9 @@ CREATE TABLE IF NOT EXISTS `mydb`.`fornecedor` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`Tipodeproduto`
--- -----------------------------------------------------
+
+ Table `mydb`.`Tipodeproduto`
+
 CREATE TABLE IF NOT EXISTS `mydb`.`Tipodeproduto` (
   `código` INT NOT NULL AUTO_INCREMENT,
   `gruposAlimentares` VARCHAR(45) NOT NULL,
@@ -91,9 +89,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Tipodeproduto` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`Mercado`
--- -----------------------------------------------------
+ Table `mydb`.`Mercado`
+
 CREATE TABLE IF NOT EXISTS `mydb`.`Mercado` (
   `NIF` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
@@ -111,9 +108,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Mercado` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`produto_has_Encomenda`
--- -----------------------------------------------------
+ Table `mydb`.`produto_has_Encomenda`
+
 CREATE TABLE IF NOT EXISTS `mydb`.`produto_has_Encomenda` (
   `produto_codigo` INT NOT NULL,
   `Encomenda_codProduto` INT NOT NULL,
