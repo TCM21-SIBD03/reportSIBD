@@ -71,6 +71,10 @@ ForneceProduto (_NIF -> Fornecedor, _NIF-> Mercado, _codigo -> Produto)
 |-----------|------ |--------|--------------|-------------------------|
 |nome       |_código|validade|cod_fornecedor|#_codigo -> Tipodeproduto|
 
+|Tipodeproduto    |       |
+|-----------------|-------|
+|gruposAlimentares|_código|
+
 ## Normalização do Esquema Relacional
 _(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
 
