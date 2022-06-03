@@ -37,7 +37,7 @@ Fornecedor (nome, _NIF, email, morada, contacto)
 Alerta (_nome, antecedência
   #_NIF->Fornecedor)
 
-Passo 4: Associações N:M
+### Passo 4: Associações N:M
 
 Produto (nome, _codigo, validade, codFornecedor, quantidade
   #_codigo->Tipodeproduto, #_NIF->Fornecedor)
