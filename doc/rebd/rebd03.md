@@ -22,36 +22,36 @@ Não há associações com cardinalidade 1:1
 
 ### Passo 3: Associações 1:N
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade
+Produto (nome, _codigo, validade, codFornecedor, quantidade,
   #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
 Tipodeproduto (gruposAlimentares,_codigo)
 
 Mercado (nome, contacto, morada, email,_NIF)
 
-Encomenda (codFonrecedor, quantidade, _codProduto
+Encomenda (codFonrecedor, quantidade, _codProduto,
   #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
 
-Alerta (_nome, antecedência
+Alerta (_nome, antecedência,
   #_NIF->Fornecedor)
 
 ### Passo 4: Associações N:M
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade
+Produto (nome, _codigo, validade, codFornecedor, quantidade,
   #_codigo->Tipodeproduto, #_NIF->Fornecedor)
 
 Tipodeproduto (gruposAlimentares,_codigo)
 
 Mercado (nome, contacto, morada, email,_NIF)
 
-Encomenda (codFonrecedor, quantidade, _codProduto
+Encomenda (codFonrecedor, quantidade, _codProduto,
   #_NIF->Mercado,#_NIF->Fornecedor)
 
 Fornecedor (nome, _NIF, email, morada, contacto)
 
-Alerta (_nome, antecedência
+Alerta (_nome, antecedência,
  #_NIF->Fornecedor)
 
 Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
@@ -71,9 +71,9 @@ Não existem Entidades Fracas
 
 ## Relações
 
-|Produto    |       |        |              |                         |
-|-----------|------ |--------|--------------|-------------------------|
-|nome       |_código|validade|codFornecedor|#_codigo -> Tipodeproduto|
+|Produto    |       |        |              |          |                         |                   |
+|-----------|------ |--------|--------------|----------|-------------------------|-------------------|
+|nome       |_código|validade|codFornecedor |quantidade|#_codigo -> Tipodeproduto|#_NIF -> Fornecedor|
 
 |Tipodeproduto    |       |
 |-----------------|-------|
@@ -83,13 +83,13 @@ Não existem Entidades Fracas
 |-------|--------|------|-----|----|
 |nome   |contacto|morada|email|_NIF|
 
-|Gerencia|     |
-|--------|-----|
-|gerente |_dono|
+|Encomenda       |           |           |                |                   |
+|----------------|-----------|-----------|----------------|-------------------|
+|codFornecedor   |quant-idade|_codProduto|#_NIF -> Mercado|#_NIF -> Fornecedor|
 
-|Stock       |            |
-|------------|------------|
-|numeroMinimo|numeroMaximo|
+|Alerta|            |                   |
+|------|------------|-------------------|
+|_nome |antecedência|#_NIF -> Fornecedor|
 
 |Fornecedor|    |     |      |        |
 |----------|----|-----|------|--------|
@@ -99,9 +99,9 @@ Não existem Entidades Fracas
 |---------------|----------------------|--------------------|-----------------|------------------------|
 |_dono->Gerencia|#numeroMinimo -> Stock|#numeroMaximo->Stock|_codigo ->Produto|_codigo -> Tipodeproduto|
 
-|ForneceProduto    |              |                  |
-|------------------|--------------|------------------|
-|_NIF -> Fornecedor|_NIF-> Mercado|_codigo -> Produto|
+|Compoe             |                        |
+|-------------------|------------------------|
+|#_codigo -> Produto|#_codProduto-> Encomenda|
 
 ## Normalização do Esquema Relacional
 
