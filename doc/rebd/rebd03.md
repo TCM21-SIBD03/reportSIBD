@@ -75,6 +75,30 @@ ForneceProduto (_NIF -> Fornecedor, _NIF-> Mercado, _codigo -> Produto)
 |-----------------|-------|
 |gruposAlimentares|_código|
 
+|Mercado|        |      |     |    |
+|-------|--------|------|-----|----|
+|nome   |contacto|morada|email|_NIF|
+
+|Gerencia|     |
+|--------|-----|
+|gerente |_dono|
+
+|Stock       |            |
+|------------|------------|
+|numeroMinimo|numeroMaximo|
+
+|Fornecedor|    |     |      |        |
+|----------|----|-----|------|--------|
+|nome      |_NIF|email|morada|contacto|
+
+|GerenciaStock  |                      |                    |                 |                        |
+|---------------|----------------------|--------------------|-----------------|------------------------|
+|_dono->Gerencia|#numeroMinimo -> Stock|#numeroMaximo->Stock|_codigo ->Produto|_codigo -> Tipodeproduto|
+
+|ForneceProduto    |              |                  |
+|------------------|--------------|------------------|
+|_NIF -> Fornecedor|_NIF-> Mercado|_codigo -> Produto|
+
 ## Normalização do Esquema Relacional
 _(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
 
