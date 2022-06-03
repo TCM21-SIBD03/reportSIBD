@@ -5,18 +5,17 @@
 
 ### Entidades: 
 
+Produto (nome, _código, validade, codFornecedor, quantidade)
 
-PRODUTO (nome, código, validade, fornecedor) 
+Tipodeproduto (gruposAlimentares, _código)
 
-TIPODEPRODUTO( gruposAlimentares, código)
+Mercado (nome, contacto, morada, email, _NIF)
 
-MERCADO (nome, contato, morada, email,NIF)
+Encomenda (codFornecedor, quantidade, _codProduto)
 
-GERENCIA (gerente, dono)
+Fornecedor (nome, _NIF, email, morada, contacto)
 
-STOCK (numeroMinimo, numeroMaximo)
-
-FORNECEDOR (nome, NIF, email, morada, contato)
+Alerta (_nome, antecedência)
 
 
 ### Associações:
