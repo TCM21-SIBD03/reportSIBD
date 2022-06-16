@@ -4,17 +4,15 @@
 
 ### Passo 1: Entidade e Atributos 
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade)
+Produto (nome, _ código _, validade, quantidade)
 
-Tipodeproduto (gruposAlimentares,_codigo)
+Tipodeproduto (gruposAlimentares, _ código _)
 
-Mercado (nome, contacto, morada, email,_NIF)
+Encomenda (_ codEncomenda _, local)
 
-Encomenda (codFonrecedor, quantidade, _codProduto)
+Fornecedor (nome, _ NIF _, email, morada, contacto)
 
-Fornecedor (nome, _NIF, email, morada, contacto)
-
-Alerta (_nome, antecedência)
+Alerta (_ nome _, antecedência)
 
 ### Passo 2: Associações 1:1
 
@@ -22,39 +20,22 @@ Não há associações com cardinalidade 1:1
 
 ### Passo 3: Associações 1:N
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade,
-  #_codigo->Tipodeproduto, #_NIF->Fornecedor)
+Produto (nome, _ código _, validade, quantidade
+#_codigo_ -> Tipodeproduto, #_NIF_ -> Fornecedor, #_codEncomenda_ ->Encomenda)
 
-Tipodeproduto (gruposAlimentares,_codigo)
+Tipodeproduto (gruposAlimentares, _ código _)
 
-Mercado (nome, contacto, morada, email,_NIF)
+Encomenda (_ codEncomenda _, local
+#_NIF_ -> Fornecedor)
 
-Encomenda (codFonrecedor, quantidade, _codProduto,
-  #_NIF->Mercado,#_NIF->Fornecedor)
+Fornecedor (nome, _ NIF _, email, morada, contacto)
 
-Fornecedor (nome, _NIF, email, morada, contacto)
-
-Alerta (_nome, antecedência,
-  #_NIF->Fornecedor)
+Alerta (_ nome _, antecedência
+#_NIF_ -> Fornecedor)
 
 ### Passo 4: Associações N:M
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade,
-  #_codigo->Tipodeproduto, #_NIF->Fornecedor)
-
-Tipodeproduto (gruposAlimentares,_codigo)
-
-Mercado (nome, contacto, morada, email,_NIF)
-
-Encomenda (codFonrecedor, quantidade, _codProduto,
-  #_NIF->Mercado,#_NIF->Fornecedor)
-
-Fornecedor (nome, _NIF, email, morada, contacto)
-
-Alerta (_nome, antecedência,
- #_NIF->Fornecedor)
-
-Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
+Não existe associações de carnalidade N:M
 
 ### Passo 5: Atributo multivalor
 
@@ -71,37 +52,26 @@ Não existem Entidades Fracas
 
 ## Relações
 
-|Produto    |       |        |              |          |                         |                   |
-|-----------|------ |--------|--------------|----------|-------------------------|-------------------|
-|nome       |_código|validade|codFornecedor |quantidade|#_codigo -> Tipodeproduto|#_NIF -> Fornecedor|
+|Produto    |        |        |          |                          |                   |                            |
+|-----------|--------|--------|----------|--------------------------|-------------------|----------------------------|
+|nome       |_código_|validade|quantidade|#_codigo_ -> Tipodeproduto|#_NIF -> Fornecedor|#_codEncomenda_ -> Encomenda|
 
-|Tipodeproduto    |       |
-|-----------------|-------|
-|gruposAlimentares|_código|
+|Tipodeproduto    |        |
+|-----------------|--------|
+|gruposAlimentares|_código_|
 
-|Mercado|        |      |     |    |
-|-------|--------|------|-----|----|
-|nome   |contacto|morada|email|_NIF|
-
-|Encomenda       |           |           |                |                   |
-|----------------|-----------|-----------|----------------|-------------------|
-|codFornecedor   |quant-idade|_codProduto|#_NIF -> Mercado|#_NIF -> Fornecedor|
+|Encomenda     |     |                   |           
+|--------------|-----|-------------------|
+|_codEncomenda_|local|#_NIF_ ->Fornecedor|
 
 |Alerta|            |                   |
 |------|------------|-------------------|
-|_nome |antecedência|#_NIF -> Fornecedor|
+|_nome_|antecedência|#_NIF -> Fornecedor|
 
-|Fornecedor|    |     |      |        |
-|----------|----|-----|------|--------|
-|nome      |_NIF|email|morada|contacto|
+|Fornecedor|     |     |      |        |
+|----------|-----|-----|------|--------|
+|nome      |_NIF_|email|morada|contacto|
 
-|GerenciaStock  |                      |                    |                 |                        |
-|---------------|----------------------|--------------------|-----------------|------------------------|
-|_dono->Gerencia|#numeroMinimo -> Stock|#numeroMaximo->Stock|_codigo ->Produto|_codigo -> Tipodeproduto|
-
-|Compoe             |                        |
-|-------------------|------------------------|
-|#_codigo -> Produto|#_codProduto-> Encomenda|
 
 ## Normalização do Esquema Relacional
 
