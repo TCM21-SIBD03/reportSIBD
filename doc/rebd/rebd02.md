@@ -5,11 +5,11 @@
 
 ### Entidades: 
 
-PRODUTO (nome, _código_, validade, quantidade)
+PRODUTO (nome, _ código _, validade, quantidade)
 
 TIPODEPRODUTO (gruposAlimentares, _código_)
 
-ENCOMENDA (...)
+ENCOMENDA (_codEncomenda_, local)
 
 FORNECEDOR (nome, _NIF_, email, morada, contacto)
 
@@ -26,8 +26,6 @@ Categoria (TIPODEPRODUTO, PRODUTO)     1:N P/T
 fornece (FORNECEDOR, PRODUTO)		       1:N P/T
 
 compõe (PRODUTO, ENCOMENDA)            N:M P/P
-
-fazA (MERCADO, ENCOMENDA)              1:N P/P
 
 envia (FORNECEDOR, ENCOMENDA)          1:N P/T
 
