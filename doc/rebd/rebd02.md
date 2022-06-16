@@ -25,7 +25,7 @@ Categoria (TIPODEPRODUTO, PRODUTO)     1:N P/T
 
 fornece (FORNECEDOR, PRODUTO)		       1:N P/T
 
-compõe (PRODUTO, ENCOMENDA)            N:M P/P
+compõe (PRODUTO, ENCOMENDA)            N:1 P/P
 
 envia (FORNECEDOR, ENCOMENDA)          1:N P/T
 
