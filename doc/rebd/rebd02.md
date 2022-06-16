@@ -7,13 +7,13 @@
 
 PRODUTO (nome, _ código _, validade, quantidade)
 
-TIPODEPRODUTO (gruposAlimentares, _código_)
+TIPODEPRODUTO (gruposAlimentares, _ código _)
 
-ENCOMENDA (_codEncomenda_, local)
+ENCOMENDA (_ codEncomenda _, local)
 
-FORNECEDOR (nome, _NIF_, email, morada, contacto)
+FORNECEDOR (nome, _ NIF _, email, morada, contacto)
 
-ALERTA (_nome_, antecedência)
+ALERTA (_ nome _, antecedência)
 
 
 ### Associações:
