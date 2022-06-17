@@ -89,95 +89,24 @@ ENCOMENDA (#_ NIF  _ ->FORNECEDOR, _ NIF _, nome, email, morada, contacto)
 
 # 1ª Forma Normal (1NF)
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
-
-Tipodeproduto (gruposAlimentares,_codigo)
-
-Mercado (nome, contacto, morada, email,_NIF)
-
-Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
-
-Fornecedor (nome, _NIF, email, morada, contacto)
-
-Alerta (_nome, antecedência, #_NIF->Fornecedor)
-
-Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
+Já se encontra na 1NF
 
 # 2ª Forma Normal (2NF)
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
-
-Tipodeproduto (gruposAlimentares,_codigo)
-
-Mercado (nome, contacto, morada, email,_NIF)
-
-Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
-
-Fornecedor (nome, _NIF, email, morada, contacto)
-
-Alerta (_nome, antecedência, #_NIF->Fornecedor)
-
-Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
+Já se encontra na 2NF
 
 # 3ª Forma Normal (3NF)
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
-
-Tipodeproduto (gruposAlimentares,_codigo)
-
-Mercado (#nome,_NIF)
-
-  Identificacaomercado (_nome, contacto, morada, email)
-
-Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
-
-Fornecedor (#nome, _NIF)
-
-  Identificacaofornecedor (_nome, email, morada, contacto)
-
-Alerta (_nome, antecedência, #_NIF->Fornecedor)
-
-Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
+FORNECEDOR (#nome, _NIF)
+Identificacaofornecedor (_nome, email, morada, contacto)
 
 # Forma Normal de Boyce-Codd (BCNF)
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
-
-Tipodeproduto (gruposAlimentares,_codigo)
-
-Mercado (#nome,_NIF)
-
-  Identificacaomercado (_nome, contacto, morada, email)
-
-Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
-
-Fornecedor (#nome, _NIF)
-
-  Identificacaofornecedor (_nome, email, morada, contacto)
-
-Alerta (_nome, antecedência, #_NIF->Fornecedor)
-
-Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
+Já se encontra na BCNF
 
 # 4ª Forma Normal (4NF)
 
-Produto (nome, _codigo, validade, codFornecedor, quantidade, #_codigo->Tipodeproduto, #_NIF->Fornecedor)
-
-Tipodeproduto (gruposAlimentares,_codigo)
-
-Mercado (#nome,_NIF)
-
-  Identificacaomercado (_nome, contacto, morada, email)
-
-Encomenda (codFonrecedor, quantidade, _codProduto, #_NIF->Mercado,#_NIF->Fornecedor)
-
-Fornecedor (#nome, _NIF)
-
-  Identificacaofornecedor (_nome, email, morada, contacto)
-
-Alerta (_nome, antecedência, #_NIF->Fornecedor)
-
-Compoe ( #_codigo->Produto, #_codProduto->Encomenda)
+Já se encontra na 4NF
 
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | [Next >](rebd04.md)
