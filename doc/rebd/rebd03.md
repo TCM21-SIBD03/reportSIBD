@@ -98,6 +98,7 @@ Já se encontra na 2NF
 # 3ª Forma Normal (3NF)
 
 FORNECEDOR (#nome, _NIF)
+
 Identificacaofornecedor (_nome, email, morada, contacto)
 
 # Forma Normal de Boyce-Codd (BCNF)
