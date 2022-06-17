@@ -98,9 +98,9 @@ Já se encontra na 2NF
 
 # 3ª Forma Normal (3NF)
 
-FORNECEDOR (#nome, _NIF)
+FORNECEDOR (#nome, _ NIF _)
 
-Identificacaofornecedor (_nome, email, morada, contacto)
+Identificacaofornecedor (_ nome _, email, morada, contacto)
 
 # Forma Normal de Boyce-Codd (BCNF)
 
