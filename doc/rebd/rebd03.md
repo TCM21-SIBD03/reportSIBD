@@ -72,6 +72,18 @@ Não existem Entidades Fracas
 |----------|-----|-----|------|--------|
 |nome      |_NIF_|email|morada|contacto|
 
+## Dependências funcionais
+
+FORNECEDOR (#_ nome _ -> ALERTA, _ NIF  _, nome, email, morada, contacto)
+
+PRODUTO (#_ codigo _ ->TIPODEPRODUTO, _ codigo  _, nome, validade, quantidade)
+
+PRODUTO (#_ NIF  _ ->FORNECEDOR, _ codigo  _, nome, validade, quantidade)
+
+ENCOMENDA (#_ codigo  _ ->PRODUTO, _ codEncomenda  _, local)
+
+ENCOMENDA (#_ NIF  _ ->FORNECEDOR, _ NIF _, nome, email, morada, contacto)
+
 
 ## Normalização do Esquema Relacional
 
