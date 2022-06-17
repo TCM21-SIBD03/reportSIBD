@@ -31,7 +31,7 @@ envia (FORNECEDOR, ENCOMENDA)          1:N P/T
 
 
 ### Diagrama: 
-![An alternative description](imagens/Diagrama1.png)   
+![An alternative description](imagens/diagrama.png)   
 
 Diagrama do modelo Entidade-Associações  
 
