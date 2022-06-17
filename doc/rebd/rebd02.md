@@ -5,7 +5,7 @@
 
 ### Entidades: 
 
-PRODUTO (nome, _ código _, validade, quantidade)
+PRODUTO (nome, <ins> código <ins>, validade, quantidade)
 
 TIPODEPRODUTO (gruposAlimentares, _ código _)
 
