@@ -5,9 +5,9 @@
 
 ### Entidades: 
 
-PRODUTO (nome, <ins> código </ins>, validade, quantidade)
+PRODUTO (nome, <ins>código</ins>, validade, quantidade)
 
-TIPODEPRODUTO (gruposAlimentares, _ código _)
+TIPODEPRODUTO (gruposAlimentares, <ins>código</ins>)
 
 ENCOMENDA (_ codEncomenda _, local)
 
