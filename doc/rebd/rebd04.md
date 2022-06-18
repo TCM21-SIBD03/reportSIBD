@@ -5,7 +5,7 @@
 
 ### Tabelas: 
 
-![An alternative description](imagens/Tabela.png)
+![An alternative description](imagens/grupo3_final.png)
 
 ## Vistas
 
