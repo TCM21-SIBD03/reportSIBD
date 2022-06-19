@@ -155,35 +155,49 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 ## DML
 
-### Tabelas: 
+INSERT INTO `produto` (nome, codigo, validade, quantidade ) VALUES
+('maçã', '01' , '22/04/2022' , '50' ),
+('banana', '02' , '27/04/2022' ,'62' ),
+('uvas', '03' , '28/04/2022','32' ),
+('morango', '04' , '27/04/2022' ,'120' ),
+('aveia', '05' , '19/08/2022' ,'20' ),
+('arroz', '06' , '27/04/2025','50' ),
+('cevada', '07' , '03/07/2022' ,'12' ),
+('centeio', '08' , '29/05/2022','10'),
+('carneVaca', '09' , '29/04/2022' ,'7' ),
+('carnePorco', '10' , '30/04/2022' ,'15'),
+('feijao', '11' , '30/04/2024' ,'45' ),
+('leite', '12' , '14/08/2022' , '22'),
+('queijo', '13' , '25/05/2022' ,'25' ),
+('azeite', '14' , '14/02/2025' ,'42' ),
+('vinagre', '15' , '07/03/2023' , '27' ),
+('oleo', '16' , '11/05/2023' ,'20' );
+INSERT INTO `tipoProduto` (gruposalimentares, codigo) VALUES
+('fruta', ' 210' ),
+('vegetais', '240'),
+('graosintegrais', '146'),
+('carne', '951'),
+('feijoes', '542'),
+('lacticinios', '234'),
+('gorduras', '642'),
+('oleos', '149');INSERT INTO `encomenda` (codEncomenda, local) VALUES
+('1346', ' local1' ),
+('4632', ' local2' ),
+('5849', ' local3' ),
+('5101', ' local1' ),
+('21567', 'local5'),
+('1240', 'local6'),
+('3563', 'local7');INSERT INTO `Fornecedor` (nome, NIF, email, morada, contacto) VALUES
+('nome1', '200000001' , 'nome1@gmail.com' , '256000001' ),
+('nome2', '200000002' , 'nome2@gmail.com' , '256000002' ),
+('nome3', '200000003' , 'nome3@gmail.com' , '256000003' ),
+('nome4', '200000004' , 'nome4@gmail.com' , '256000004' ),
+('nome5', '200000005' , 'nome5@gmail.com' , '256000005' );INSERT INTO `alerta` (nome, antecedencia) VALUES
+('alerta1', ' 13/05' ),
+('alerta2', ' 14/08' ),
+('alerta3', ' 21/03' );
 
-![An alternative description](imagens/tabela1.png)
-![An alternative description](imagens/tabela2.png)
-![An alternative description](imagens/tabela3.png)
 
-
-#### Seleciona os azeites de Oliva existente no supermercado.
-
-Select    Azeite de Oliva
-
-From    Gorduras e óleos
-
-
-#### Seleciona as frutas e vegetais que tenham quantidade inferior a 4.
-
-Select    Maça, Banana, Uva, Morango
-
-From   Frutas e vegetais
-
-Where   quantidade < 4
-
-
-
-#### Seleciona as carnes e feijões que tenham validade superior a 30 dias.
-
-Select    Carne de vaca, Carne de porco, Feijão verde, feijão vermelho
-From    carnes e feijões
-Where   validade > 30
 
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/TCM21-SIBD03/reportSIBD) | Next >
