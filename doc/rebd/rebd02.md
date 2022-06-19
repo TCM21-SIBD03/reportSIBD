@@ -9,11 +9,11 @@ PRODUTO (nome, <ins>código</ins>, validade, quantidade)
 
 TIPODEPRODUTO (gruposAlimentares, <ins>código</ins>)
 
-ENCOMENDA (_ codEncomenda _, local)
+ENCOMENDA (<ins> codEncomenda </ins>, local)
 
-FORNECEDOR (nome, _ NIF _, email, morada, contacto)
+FORNECEDOR (nome, <ins> NIF </ins>, email, morada, contacto)
 
-ALERTA (_ nome _, antecedência)
+ALERTA (<ins> nome </ins>, antecedência)
 
 
 ### Associações:
