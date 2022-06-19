@@ -172,6 +172,7 @@ INSERT INTO `produto` (nome, codigo, validade, quantidade ) VALUES
 ('azeite', '14' , '14/02/2025' ,'42' ),
 ('vinagre', '15' , '07/03/2023' , '27' ),
 ('oleo', '16' , '11/05/2023' ,'20' );
+
 INSERT INTO `tipoProduto` (gruposalimentares, codigo) VALUES
 ('fruta', ' 210' ),
 ('vegetais', '240'),
@@ -180,6 +181,7 @@ INSERT INTO `tipoProduto` (gruposalimentares, codigo) VALUES
 ('feijoes', '542'),
 ('lacticinios', '234'),
 ('gorduras', '642'),
+
 ('oleos', '149');INSERT INTO `encomenda` (codEncomenda, local) VALUES
 ('1346', ' local1' ),
 ('4632', ' local2' ),
@@ -187,6 +189,7 @@ INSERT INTO `tipoProduto` (gruposalimentares, codigo) VALUES
 ('5101', ' local1' ),
 ('21567', 'local5'),
 ('1240', 'local6'),
+
 ('3563', 'local7');INSERT INTO `Fornecedor` (nome, NIF, email, morada, contacto) VALUES
 ('nome1', '200000001' , 'nome1@gmail.com' , '256000001' ),
 ('nome2', '200000002' , 'nome2@gmail.com' , '256000002' ),
