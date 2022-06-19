@@ -4,15 +4,15 @@
 
 ### Passo 1: Entidade e Atributos 
 
-Produto (nome, _ código _, validade, quantidade)
+Produto (nome, <ins>código</ins>, validade, quantidade)
 
-Tipodeproduto (gruposAlimentares, _ código _)
+Tipodeproduto (gruposAlimentares, <ins>código</ins>)
 
-Encomenda (_ codEncomenda _, local)
+Encomenda (<ins>codEncomenda</ins>, local)
 
-Fornecedor (nome, _ NIF _, email, morada, contacto)
+Fornecedor (nome, <ins>NIF</ins>, email, morada, contacto)
 
-Alerta (_ nome _, antecedência)
+Alerta (<ins>nome</ins>, antecedência)
 
 ### Passo 2: Associações 1:1
 
@@ -20,8 +20,8 @@ Não há associações com cardinalidade 1:1
 
 ### Passo 3: Associações 1:N
 
-Produto (nome, _ código _, validade, quantidade
-#_codigo_ -> Tipodeproduto, #_NIF_ -> Fornecedor, #_codEncomenda_ ->Encomenda)
+Produto (nome, <ins>código</ins>, validade, quantidade
+#<ins>codigo</ins> -> Tipodeproduto, #_NIF_ -> Fornecedor, #_codEncomenda_ ->Encomenda)
 
 Tipodeproduto (gruposAlimentares, _ código _)
 
@@ -78,15 +78,15 @@ Não existem Entidades Fracas
 
 ## Dependências funcionais
 
-FORNECEDOR (#_ nome _ -> ALERTA, _ NIF  _, nome, email, morada, contacto)
+FORNECEDOR (#<ins>nome</ins> -> ALERTA, <ins>NIF</ins>, nome, email, morada, contacto)
 
-PRODUTO (#_ codigo _ ->TIPODEPRODUTO, _ codigo  _, nome, validade, quantidade)
+PRODUTO (#<ins>codigo</ins>->TIPODEPRODUTO, <ins>codigo</ins>, nome, validade, quantidade)
 
-PRODUTO (#_ NIF  _ ->FORNECEDOR, _ codigo  _, nome, validade, quantidade)
+PRODUTO (#<ins>NIF</ins> ->FORNECEDOR, <ins>codigo</ins>, nome, validade, quantidade)
 
-ENCOMENDA (#_ codigo  _ ->PRODUTO, _ codEncomenda  _, local)
+ENCOMENDA (#<ins>codigo</ins> ->PRODUTO, <ins>codEncomenda</ins>, local)
 
-ENCOMENDA (#_ NIF  _ ->FORNECEDOR, _ NIF _, nome, email, morada, contacto)
+ENCOMENDA (#<ins>NIF</ins>->FORNECEDOR, <ins>NIF</ins>, nome, email, morada, contacto)
 
 # 1ª Forma Normal (1NF)
 
@@ -98,9 +98,9 @@ Já se encontra na 2NF
 
 # 3ª Forma Normal (3NF)
 
-FORNECEDOR (#nome, _ NIF _)
+FORNECEDOR (#nome, <ins>NIF</ins>)
 
-Identificacaofornecedor (_ nome _, email, morada, contacto)
+Identificacaofornecedor (<ins>nome</ins>, email, morada, contacto)
 
 # Forma Normal de Boyce-Codd (BCNF)
 
