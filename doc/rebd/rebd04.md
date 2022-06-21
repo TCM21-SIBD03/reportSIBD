@@ -12,19 +12,14 @@
 
 | **Nome** | **Descrição** |
 | --- | --- |
-| **Formacao** | Informação sobre a formação | 
-| **precisaDe** | O funcionário precisa de ter formação para trabalhar em algumas secções. | 
-| **Funcionários** | Informaçoes sobre os funcionarios. | 
-| **Turno** | Informações sobre o turno. |
-| **definidoPor** | O turno é definido pelo horário. | 
-| **horario** |Informações sobre o horário. | 
-| **dependeDe** | O turno depende da secção em que trabalha. | 
-| **tem** | os fornecedores tem um horário. | 
-| **secção** |Informações sobre as secções. | 
-| **Fornecedor** |Informações sobre os fornecedores. | 
-| **Produto** |Informações sobre os produtos. | 
-| **envia** |A entrega envia o produto. | 
-| **Entrega** |Informações sobre as entregas. | 
+| **Produto** | Informação sobre os produtos comercializados. | 
+| **Tipodeprodutos** | Diversidade dos produtos. | 
+| **Fornecedor** | Informações sobre quem fornece os produtos. | 
+| **Alerta** | Aviso quando é necessário um reabastecimento. |
+| **envia** | O fornecedor envia os produtos. | 
+| **Encomenda** |Informações sobre os produtos necessários no supermercado e pedidos pelo mesmo. | 
+| **compoe** | Composição da encomenta pedida. | 
+| **quantidade** | Quantidade dos produtos pedidos. | 
 
 ## Vistas
 
