@@ -9,7 +9,7 @@
 ## Grupo _03_
 
 
-* João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
+* João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/jrodaczy)
 * Daniel Gomes [@DanielGomes](https://github.com/EternaL1001)
 * Rafael Maia  [@RafaelMaia](https://github.com/RafaelMaiaa)
 * Joris Kibildis [@JorisKibildis](https://github.com/JustJoris)
