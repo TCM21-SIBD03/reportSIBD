@@ -13,7 +13,7 @@ Nosso trabalho pretende ajudar uma empresa a criar um sistema para facilitar as 
 :[REBD](doc/rebd/rebd00.md)
 
 ## Team
-* João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/joaohorvath)
+* João Matheus Rodaczynski Horvath [@JoaoHorvath](https://github.com/jrodaczy)
 * Daniel Gomes [@DanielGomes](https://github.com/EternaL1001)
 * Rafael Maia  [@RafaelMaia](https://github.com/RafaelMaiaa)
 * Joris Kibildis [@JorisKibildis](https://github.com/JustJoris)
